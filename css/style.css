@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,400;1,300&family=IM+Fell+Great+Primer+SC&family=Open+Sans:ital,wght@0,300;0,400;0,600;1,300&display=swap');
+
+@import "./reset.css";
+@import "./header.css";
+
+
+
+:root{
+    --cormorant: 'Cormorant', serif;
+    --openSans: 'Open Sans', sans-serif;
+    --imFell: 'IM Fell Great Primer SC', serif;
+    --baseColor: rgb(21, 22, 24);
+    --fontSize: 16px;
+    --fontWeight: 300;
+    --lineHeight: 29px;
+}
+
+body{
+    font-family: var(--openSans);
+    color: var(--baseColor);
+    font-weight: var(--fontWeight);
+    font-size: var(--fontSize);
+    line-height: var(lineHeight);
+}
+
+html.bacground-change{
+    background: rgba(0, 0, 0, 0.5);
+    transition: all .5s ease;
+}
+
+.container{
+    max-width: 1230px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+
+
+
+
+
