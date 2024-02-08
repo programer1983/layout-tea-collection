@@ -6,6 +6,9 @@
 @import "./explore.css";
 @import "./reviews.css";
 @import "./blog.css";
+@import "./more.css";
+@import "./prioritise.css";
+@import "./footer.css";
 
 
 
@@ -31,7 +34,6 @@ html.bacground-change{
     background: rgba(0, 0, 0, 0.5);
     transition: all .5s ease;
 }
-
 .container{
     max-width: 1230px;
     padding: 0 15px;

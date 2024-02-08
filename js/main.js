@@ -7,7 +7,7 @@ headerburger.addEventListener('click', open)
 
 function open() {
     navlist.classList.toggle('open-burger')
-    html.classList.toggle('bacground-change')
+    html.classList.add('bacground-change')
 }
 
 closeBurger.addEventListener('click', close)
