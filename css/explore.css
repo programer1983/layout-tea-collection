@@ -10,10 +10,22 @@
     text-align: center;
     margin: 0 auto;
     margin-bottom: 150px;
+    position: relative;
 }
-.explore-collections {
- 
+.explore-text::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    height: 1.5px;
+    width: 0;
+    background-color: brown;
+    transition: all .5s ease;
 }
+.explore-text:hover:after {
+    width: 100%;
+}
+.explore-collections {}
 .explore-collections__title {
     font-family: var( --cormorant);
     font-size: 40px;
@@ -35,6 +47,10 @@
 }
 .explore-collections__img {
     margin-bottom: 10px;
+    transition: all .4s ease;
+}
+.explore-collections__img:hover {
+    transform: scale(1.1);
 }
 .explore-collections_name {
     font-family: var( --cormorant);

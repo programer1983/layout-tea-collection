@@ -19,6 +19,14 @@
     flex-direction: column;
     align-items: center;
 }
+.prioritise-item img {
+    transition: all .5s ease;
+}
+.prioritise-item:hover{
+    img {
+        transform: rotate(50deg);
+    }
+}
 .prioritise-item__title {
     font-size: 30px;
     line-height: 41px;

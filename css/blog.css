@@ -17,12 +17,21 @@
     gap: 40px 57px;
     overflow-x: hidden;
     margin-bottom: 60px;
+    overflow-y: hidden;
 }
 .blog-item {
     display: flex;
     gap: 0 20px;
 }
-.blog-item__img {}
+.blog-image{
+   overflow: hidden;
+}
+.blog-item__img {
+    transition: all .5s ease;
+}
+.blog-item__img:hover{
+    transform: scale(1.1);
+}
 .blog-item__content {}
 .blog-item__text {
     font-family: var(--cormorant);
@@ -61,6 +70,11 @@
     background: rgb(255, 255, 255);
     box-sizing: border-box;
     border: 1px solid rgb(21, 22, 24);
+    transition: all .5s ease;
+}
+.blog-button:hover {
+    transform: scale(1.2);
+    background: rgb(190, 185, 185);
 }
 
 @media (max-width: 1080px){
@@ -70,8 +84,6 @@
     }
     .blog-body {
         grid-template-columns: repeat(1, 1fr);
-        /* grid-template-rows: repeat(2, 1fr); */
-        /* gap: 40px 57px; */
     }
     .blog-item{
         justify-content: center;

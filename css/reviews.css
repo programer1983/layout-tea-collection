@@ -21,6 +21,11 @@
     margin-bottom: 10px;
     line-height: 1.2;
     font-style: italic;
+    transition: all .5s ease;
+}
+.reviews-item__text:hover {
+    text-decoration: underline 0.5px;
+    transform: scale(1.1);
 }
 .reviews-item__name {
     font-size: 20px;

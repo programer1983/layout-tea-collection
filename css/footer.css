@@ -41,13 +41,18 @@
     font-size: 12px;
     line-height: 16px;
 }
-.footer-contacts {
-}
+.footer-contacts {}
 .footer-contacts__social{
     display: flex;
     align-items: center;
     column-gap: 20px;
     margin-left: 100px;
+}
+.footer-contacts__social img{
+    transition: all .5s ease;
+}
+.footer-contacts__social img:hover{
+    transform: scale(1.4);
 }
 .footer-contacts__title{
     font-family: var(--cormorant);
