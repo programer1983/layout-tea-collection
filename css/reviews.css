@@ -10,12 +10,25 @@
     line-height: 48px;
     margin-bottom: 60px;
     text-align: center;
+    transform: translateY(100%);
+    opacity: 0;
+    transition: all 2s ease;
+}
+.reviews-ttile.active{
+    transform: translateX(0);
+    opacity: 1;
 }
 .reviews-items {
     display: flex;
     column-gap: 26px;
 }
-.reviews-item {}
+.reviews-item {
+    transform: rotateY(90deg);
+    transition: all 3s;
+}
+.reviews-item.active {
+    transform: rotateY(0);
+}
 .reviews-item__text {
     max-width: 288px;
     margin-bottom: 10px;

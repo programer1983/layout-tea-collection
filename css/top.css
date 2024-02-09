@@ -12,6 +12,13 @@
     position: absolute;
     bottom: 20px;
     width: 789.51px;
+    transform: translateX(-20%);
+    opacity: 0;
+    transition: all 2s ease;
+}
+.top-content.active{
+    transform: translateX(0);
+    opacity: 1;
 }
 .top-title {
     color: rgb(255, 255, 255);

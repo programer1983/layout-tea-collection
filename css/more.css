@@ -11,7 +11,13 @@
     gap: 0 40px;
 }
 .more-content {
-   
+    transform: translateX(-20%);
+    opacity: 0;
+    transition: all 2s ease;
+}
+.more-content.active{
+    transform: translateX(0);
+    opacity: 1;
 }
 .more-content__title {
     font-family: var(--cormorant);
@@ -28,8 +34,14 @@
 }
 .more-form {
     margin-top: 90px;
+    transform: translateX(20%);
+    opacity: 0;
+    transition: all 2s ease;
 }
-
+.more-form.active{
+    transform: translateX(0);
+    opacity: 1;
+}
 .more-form__submit {
     display: flex;
     align-items: center;

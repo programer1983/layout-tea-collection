@@ -18,14 +18,14 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    transform: rotateY(90deg);
+    transition: all 2s;
+}
+.prioritise-item.active {
+    transform: rotateY(0);
 }
 .prioritise-item img {
     transition: all .5s ease;
-}
-.prioritise-item:hover{
-    img {
-        transform: rotate(50deg);
-    }
 }
 .prioritise-item__title {
     font-size: 30px;
