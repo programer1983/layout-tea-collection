@@ -29,6 +29,7 @@ body{
     font-size: var(--fontSize);
     line-height: var(lineHeight);
     position: relative;
+    overflow-x: hidden;
 }
 
 .wrapper{
