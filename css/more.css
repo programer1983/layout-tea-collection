@@ -9,7 +9,7 @@
     display: flex;
     align-items: center;
     gap: 0 40px;
-    overflow: hidden;
+    overflow-x: hidden;
 }
 .more-content {
     transform: translateX(-20%);
