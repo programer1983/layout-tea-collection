@@ -28,12 +28,34 @@ body{
     font-weight: var(--fontWeight);
     font-size: var(--fontSize);
     line-height: var(lineHeight);
+    position: relative;
 }
 
-html.bacground-change{
-    background: rgba(0, 0, 0, 0.5);
-    transition: all .5s ease;
+.wrapper{
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
 }
+
+.main{
+    flex-grow: 1;
+}
+
+.menu-close{
+    display: none;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, .5);
+    z-index: 1;
+}
+
+.menu-close.menu-open{
+    display: block;
+}
+
 .container{
     max-width: 1230px;
     padding: 0 15px;
